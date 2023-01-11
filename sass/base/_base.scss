@@ -1,6 +1,5 @@
 body {
     display: block;
-    max-width: 100%;
     height: auto;
     background-color: $color-background-primary;
     color: $color-text-primary;
@@ -17,6 +16,20 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    // max-width: 479px;
     box-sizing: border-box;
-    width: 1200px;
+
+    @include for-phone-up {
+        width: 480px;
+    }
+
+    @include for-tablet-up {
+        width: 768px;
+    }
+
+    @include for-desktop-up {
+        width: 1200px;
+    }
+
+
 }

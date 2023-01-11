@@ -1,25 +1,62 @@
-.header__container {
-    display: flex;
+.header {
     border-bottom: 1px solid $color-border;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: 10px 0 10px auto;
+        background-color: transparent;
+        border: none;
+
+        @include for-tablet-up {
+            display: none;
+        }
+    }
+
+    &__icon-open {
+        position: absolute;
+        @extend %position-center;
+        @include for-tablet-up {
+            display: none;
+        }
+    }
+
+    &__icon-close {
+        position: absolute;
+        display: none;
+        @extend %position-center;
+        @include for-tablet-up {
+            display: none;
+        }
+    }
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
+    display: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
+    @include for-tablet-up {
+        display: block;
+        margin-left: 88px;
+        margin-right: auto;
+    }
+    
     &__list {
         display: flex;
-        gap: 50px;
+        gap: 51px;
     }
 
     &__link {
         color: $color-text-primary;
-        padding: 32px 0;
         position: relative;
         text-decoration: none;
         transition: color $transition-ms $transition-cubic;
@@ -28,24 +65,43 @@
         &:focus {
             color: $color-brand;
         }
+
+        @include for-tablet-up {
+            padding: 34px 0;
+        }
     }
     
     &__address {
-        display: flex;
-        align-items: center;
-        gap: 30px;
+        display: none;
         letter-spacing: 0.02em;
+
+        @include for-tablet-up {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 21px 0;
+        }
+
+        @include for-desktop-up {
+            flex-direction: row;
+            gap: 30px;
+            padding: 0;
+        }
     }
     
     &__address-link {
         @extend %flex-center;
-        padding: 32px 0;
         fill: currentColor;
         transition: color $transition-ms $transition-cubic;
 
         &:hover,
         &:focus {
             color: $color-brand;
+        }
+
+        @include for-desktop-up {
+            padding: 32px 0;
         }
     }
 }
