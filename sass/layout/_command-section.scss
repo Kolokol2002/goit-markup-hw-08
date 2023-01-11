@@ -1,0 +1,59 @@
+.command-section {
+    padding: 94px 0;
+    min-width: 1200px;
+    background-color: $color-background-command-button;
+    text-align: center;
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__card {
+        background-color: $color-background-primary;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
+    }
+    
+    &__img {
+        margin-bottom: 30px;
+    }
+    
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+    }
+    
+    &__subtitle {
+        color: $color-text-secondary;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    
+    &__icons {
+        @extend %flex-center;
+        gap: 10px;
+    }
+    
+    &__icon {
+        @extend %flex-center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        fill: $color-icon;
+        transition: background-color $transition-ms $transition-cubic, fill $transition-ms $transition-cubic;
+
+        &:hover,
+        &:focus {
+            background-color: $color-brand;
+            fill: $color-icon-reverse;
+        }
+    }
+}

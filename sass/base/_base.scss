@@ -1,0 +1,22 @@
+body {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: $color-background-primary;
+    color: $color-text-primary;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 1200px;
+}

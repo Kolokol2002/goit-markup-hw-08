@@ -1,0 +1,31 @@
+.clients-section {
+    padding: 94px 0;
+    text-align: center;
+    
+    &__title {
+        margin-bottom: 50px;
+    }
+    
+    &__icons {
+        @extend %flex-center;
+        gap: 30px;
+    
+    }
+    
+    &__icon {
+        @extend %flex-center;
+        width: 170px;
+        height: 92px;
+        box-sizing: border-box;
+        border: 1px solid $color-icon;
+        border-radius: 4px;
+        fill: $color-icon;
+        transition: border-color $transition-ms $transition-cubic, fill $transition-ms $transition-cubic;
+        
+        &:hover,
+        &:focus {
+            border-color: $color-brand;
+            fill: $color-brand;
+        }
+    }
+}
