@@ -26,7 +26,7 @@
           transform: translateY(-10%);
 }
 
-.description-section__icon, .hero-section__container, .nav__address-link, .checkbox, .backdrop, .button-close {
+.clients-section__icon, .command-section__icon, .command-section__icons, .doing-section__subtitle, .description-section__icon, .hero-section__container, .nav__address-link, .checkbox, .backdrop, .button-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,9 +55,15 @@ body {
 }
 
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.16;
+}
+@media (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .container {
@@ -698,4 +704,165 @@ p {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.doing-section {
+  display: none;
+  padding-bottom: 94px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .doing-section {
+    display: block;
+  }
+}
+.doing-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.doing-section__item {
+  position: relative;
+  height: 294px;
+}
+.doing-section__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.command-section {
+  padding: 60px 0;
+  background-color: #F5F4FA;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .command-section {
+    padding: 94px 0;
+  }
+}
+@media (min-width: 768px) {
+  .command-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.command-section__card {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .command-section__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .command-section__card {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .command-section__card {
+    width: 270px;
+  }
+}
+.command-section__img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.command-section__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.command-section__subtitle {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.command-section__icons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.command-section__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  fill: #AFB1B8;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.command-section__icon:hover, .command-section__icon:focus {
+  background-color: #2196F3;
+  fill: #FFFFFF;
+}
+
+.clients-section {
+  padding: 60px 0;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .clients-section {
+    padding: 94px 0;
+  }
+}
+.clients-section__title {
+  margin-bottom: 50px;
+}
+.clients-section__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.clients-section__icon {
+  width: 210px;
+  height: 92px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-section__icon:hover, .clients-section__icon:focus {
+  border-color: #2196F3;
+  fill: #2196F3;
+}
+@media (min-width: 768px) {
+  .clients-section__icon {
+    width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients-section__icon {
+    width: 170px;
+  }
 }/*# sourceMappingURL=main.css.map */

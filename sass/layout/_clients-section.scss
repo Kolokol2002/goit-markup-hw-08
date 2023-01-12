@@ -1,20 +1,24 @@
 .clients-section {
-    padding: 94px 0;
+    padding: 60px 0;
     text-align: center;
+
+    @include for-desktop-up {
+        padding: 94px 0;
+    }
     
     &__title {
         margin-bottom: 50px;
     }
     
     &__icons {
-        @extend %flex-center;
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
-    
     }
     
     &__icon {
         @extend %flex-center;
-        width: 170px;
+        width: 210px;
         height: 92px;
         box-sizing: border-box;
         border: 1px solid $color-icon;
@@ -26,6 +30,14 @@
         &:focus {
             border-color: $color-brand;
             fill: $color-brand;
+        }
+
+        @include for-tablet-up {
+            width: 226px;
+        }
+
+        @include for-desktop-up {
+            width: 170px;
         }
     }
 }

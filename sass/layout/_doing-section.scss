@@ -1,6 +1,11 @@
 .doing-section {
-    padding: 94px 0;
+    display: none;
+    padding-bottom: 94px;
     text-align: center;
+
+    @include for-desktop-up {
+        display: block;
+    }
     
     &__list {
         display: flex;

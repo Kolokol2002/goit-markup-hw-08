@@ -8,15 +8,18 @@ body {
 }
 
 .section-title {
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
     line-height: 1.16;
+    @include for-desktop-up {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    // max-width: 479px;
     box-sizing: border-box;
 
     @include for-phone-up {
