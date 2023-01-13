@@ -1,10 +1,17 @@
-.current::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: $color-brand;
-    border-radius: 2px;
+.nav__link.current {
+    @include for-tablet-down {
+        color: $color-brand;
+    }
+    @include for-tablet-up {
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: $color-brand;
+            border-radius: 2px;
+        }
+    }
 }
