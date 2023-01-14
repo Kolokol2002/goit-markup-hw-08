@@ -16,11 +16,11 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-    
+
     &__icon {
         @extend %flex-center;
-        width: 210px;
         height: 92px;
+        width: 210px;
         box-sizing: border-box;
         border: 1px solid $color-icon;
         border-radius: 4px;

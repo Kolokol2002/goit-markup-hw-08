@@ -1,10 +1,11 @@
 .checkbox {
-    @extend %flex-center;
+    display: flex;
     margin-bottom: 30px;
     
     &__box {
         position: relative;
         margin-right: 7px;
+        padding-top: 2px;
         height: 15px;
         cursor: pointer;
     }
@@ -14,8 +15,8 @@
         height: 15px;
         margin: 0;
         appearance: none;
-        border: 1px solid $color-text-primary;
-        border-radius: 1px;
+        border: 2px solid $color-text-primary;
+        border-radius: 2px;
         overflow: hidden;
     }
     
@@ -36,11 +37,14 @@
     
     &__text {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        text-align: center;
         color: $color-text-secondary;
+
+        @include for-desktop-up {
+            font-size: 14px;
+        }
     }
     
     &__link {
