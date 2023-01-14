@@ -4,32 +4,42 @@
     background-color: $color-background-hero-footer;
     
     &__container {
-        display: flex;
+        // display: flex;
     }
     
     &__nav {
-        margin-right: 70px;
+        // margin-right: 70px;
+        text-align: center;
+        line-height: 1.71;
+        margin-bottom: 60px;
     }
     
     &__logo {
         display: block;
         color: $color-background-primary;
-        margin: 0 0 20px;
+        // margin: 0 0 20px;
+        margin-bottom: 20px;
     }
     
     &__address {
+        // display: flex;
+        // flex-direction: column;
         color: $color-text-secondary;
         font-weight: 400;
-        line-height: 1.14;
+
+        @include for-tablet-down {
+            // font-size: 14px;
+        }
     }
     
     &__address-street {
         color: $color-background-primary;
-        line-height: 1.71;
+        
     }
     
-    &_address_link:not(:last-child) {
-        padding-bottom: 9px;
+    &__address_link:not(:last-child) {
+        // padding-bottom: 9px;
+        margin-bottom: 8px;
     }
 
     &__title {
@@ -40,6 +50,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -76,18 +87,22 @@
     padding-top: 12px;
     
     &__form {
-        display: inline-flex;
+        // display: inline-flex;
         align-items: flex-end;
     }
     
     &__input {
         // width: 360px;
+        width: 100%;
+        max-width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         background-color: transparent;
         box-sizing: border-box;
-        margin-right: 12px;
+        // margin-right: 12px;
+        margin-bottom: 20px;
+        // margin: 0 auto ;
         padding: 15px;
         color: rgba(255, 255, 255, 0.6);
         transition: border-color $transition-ms $transition-cubic;
@@ -114,9 +129,12 @@
     }
     
     &__button-box {
-        width: 200px;
-        height: 50px;
         position: relative;
+        // @extend %flex-center;
+        margin: 0 auto;
+        // width: 200px;
+        max-width: 200px;
+        height: 50px;
     }
     
     &__icon {
