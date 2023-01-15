@@ -22,9 +22,8 @@
     
     &__icon {
         position: absolute;
-        top: 0;
         left: 0;
-        border-radius: 1px;
+        border-radius: 2px;
         fill: transparent;
         transition: fill $transition-ms $transition-cubic,
             background-color $transition-ms $transition-cubic;
