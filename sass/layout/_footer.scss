@@ -5,13 +5,25 @@
     
     &__container {
         // display: flex;
+        @include for-tablet-up {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
     
     &__nav {
         // margin-right: 70px;
         text-align: center;
         line-height: 1.71;
-        margin-bottom: 60px;
+        @include for-tablet-down {
+            margin-bottom: 60px;
+        }
+
+        @include for-tablet-up {
+            margin-right: 165px;
+        }
     }
     
     &__logo {
@@ -56,8 +68,10 @@
 
 /* footer social */
 .social {
-    padding-top: 12px;
-    margin-right: auto;
+    // padding-top: 12px;
+    @include for-tablet-down {
+        margin-right: auto;
+    }
     
     &__icons {
         @extend %flex-center;
@@ -82,9 +96,12 @@
 }
 
 /* footer form */
-
 .form-email {
-    padding-top: 12px;
+    // padding-top: 12px;
+    @include for-tablet-up {
+        margin-top: 60px;
+        width: 450px;
+    }
     
     &__form {
         // display: inline-flex;
@@ -92,7 +109,6 @@
     }
     
     &__input {
-        // width: 360px;
         width: 100%;
         max-width: 450px;
         height: 50px;
@@ -102,6 +118,7 @@
         box-sizing: border-box;
         // margin-right: 12px;
         margin-bottom: 20px;
+        // margin: 0 auto 20px;
         // margin: 0 auto ;
         padding: 15px;
         color: rgba(255, 255, 255, 0.6);
