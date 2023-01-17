@@ -15,7 +15,7 @@
     <!--header block-->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo">
+        <a href="./index.html" class="logo header__logo">
           <span class="logo__first-text">Web</span>Studio
         </a>
         <div class="header__menu js-menu-container">
@@ -25,7 +25,9 @@
                 <a class="nav__link" href="./index.html">Студія</a>
               </li>
               <li>
-                <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+                <a class="nav__link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li>
                 <a class="nav__link" href="./contacts.html">Контакти</a>
@@ -33,19 +35,19 @@
             </ul>
           </nav>
 
-          <ul class="address">
-            <li>
-              <address class="address__link">
-                <svg class="address__icon" width="16" height="12">
+          <ul class="address header__address">
+            <li class="address__item">
+              <address class="address__link header__address-link">
+                <svg class="header__address-icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
                 <a href="mailto:info@devstudio.com"></a>
                 info@devstudio.com
               </address>
             </li>
-            <li>
-              <address class="address__link nav__address-link">
-                <svg class="address__icon" width="10" height="16">
+            <li class="address__item">
+              <address class="address__link header__address-link">
+                <svg class="header__address-icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 <a href="tel:+380961111111"></a>
@@ -71,11 +73,23 @@
         </div>
 
         <button type="button" class="header__button">
-          <svg class="header__icon-open js-open-menu"" width="40" height="40">
-            <use href="./images/icons.svg#icon-open-menu"></use>
-          </svg>
-          <svg class="header__icon-close js-close-menu" width="40" height="40">
-            <use href="./images/icons.svg#icon-close-menu"></use>
+          <svg
+            class="header__icons js-open-menu js-close-menu js-btn-menu"
+            width="40"
+            height="40"
+          >
+            <use
+              class="header__icon top"
+              href="./images/icons.svg#icon-menu-top"
+            ></use>
+            <use
+              class="header__icon middle"
+              href="./images/icons.svg#icon-menu-middle"
+            ></use>
+            <use
+              class="header__icon bottom"
+              href="./images/icons.svg#icon-menu-bottom"
+            ></use>
           </svg>
         </button>
       </div>
@@ -194,7 +208,11 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__img-box">
-                  <img src="./images/img-portfilio-4.jpg" alt="Навушники" />
+                  <img
+                    class="card__img"
+                    src="./images/img-portfilio-4.jpg"
+                    alt="Навушники"
+                  />
                   <p class="card__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -210,7 +228,11 @@
             <li class="card">
               <a class="card__link" href="#">
                 <div class="card__img-box">
-                  <img src="./images/img-portfilio-5.jpg" alt="Дві коробки" />
+                  <img
+                    class="card__img"
+                    src="./images/img-portfilio-5.jpg"
+                    alt="Дві коробки"
+                  />
                   <p class="card__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -313,22 +335,21 @@
       <div class="container footer__container">
         <div class="footer__nav">
           <a href="./index.html" class="logo footer__logo">
-            <span class="logo__first-text">Web</span>
-            Studio
+            <span class="logo__first-text">Web</span>Studio
           </a>
           <ul class="address footer__address">
-            <li class="footer_address_link">
+            <li class="footer__address_link">
               <address class="address__link footer__address-street">
                 м. Київ, пр-т Лесі Українки, 26
               </address>
             </li>
-            <li class="footer_address_link">
+            <li class="footer__address_link">
               <address class="address__link">
                 <a href="mailto:info@devstudio.com"></a>
                 info@devstudio.com
               </address>
             </li>
-            <li class="footer_address_link">
+            <li class="footer__address_link">
               <address class="address__link">
                 <a href="tel:+380961111111"></a>
                 +38 096 111 11 11
@@ -370,9 +391,9 @@
           </ul>
         </div>
         <div class="form-email">
+          <h2 class="footer__title">Підпишіться на розсилку</h2>
           <form class="form-email__form" autocomplete="off">
             <div class="form-email__input-box">
-              <h2 class="footer__title">Підпишіться на розсилку</h2>
               <input
                 class="form-email__input"
                 type="email"
@@ -395,7 +416,6 @@
       </div>
     </footer>
 
-    
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

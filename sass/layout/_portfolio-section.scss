@@ -3,9 +3,18 @@
     
     &__buttons {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 8px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+
+        @include for-tablet-up {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        @include for-desktop-up {
+            margin-bottom: 50px;
+        }
     }
     
     &__button {
@@ -13,18 +22,26 @@
         transition: background-color $transition-ms $transition-cubic,
             color $transition-ms $transition-cubic,
             box-shadow $transition-ms $transition-cubic;
+        
+        &:hover,
+        &:focus {
+            background-color: $color-brand;
+            color: $color-background-primary;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        @include for-tablet-down {
+            margin-bottom: 15px;
+        }
     }
-    
-    &__button:hover,
-    &__button:focus {
-        background-color: $color-brand;
-        color: $color-background-primary;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-    
+
     &__cards {
         display: flex;
         flex-wrap: wrap;
+
+        @include for-tablet-down {
+            justify-content: center;
+        }
     }
 }
 
