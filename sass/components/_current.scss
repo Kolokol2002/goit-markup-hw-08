@@ -2,6 +2,7 @@
     @include for-tablet-down {
         color: $color-brand;
     }
+
     @include for-tablet-up {
         &::after {
             content: '';

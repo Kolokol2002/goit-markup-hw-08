@@ -5,13 +5,17 @@
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     &__logo {
         @include for-phone-only {
             margin-right: 10px;
         }
+
+        @include for-tablet-up {
+            margin-right: 88px;
+        }
+
     }
 
     &__menu {
@@ -36,6 +40,7 @@
         @include for-tablet-up {
             display: flex;
             align-items: center;
+            flex-grow: 1;
         }
     }
 
@@ -208,10 +213,8 @@
     }
 
     @include for-tablet-up {
-        display: block;
-        margin-left: 88px;
+        margin-right: auto;
         font-size: 14px;
-        margin-right: 96px;
     }
     
     &__list {
@@ -223,8 +226,7 @@
         }
 
         @include for-tablet-up {
-            display: flex;
-            gap: 51px;
+            gap: 50px;
         }
     }
 
