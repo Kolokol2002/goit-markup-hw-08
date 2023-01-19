@@ -178,14 +178,16 @@
             <li class="doing-section__item">
               <img
                 class="doing-section__img"
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
-                alt="Пишуть код"
+                alt="Написання коду"
               />
               <p class="doing-section__subtitle">Десктопні додатки</p>
             </li>
             <li class="doing-section__item">
               <img
                 class="doing-section__img"
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Корекція коліру"
               />
@@ -194,6 +196,7 @@
             <li class="doing-section__item">
               <img
                 class="doing-section__img"
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Мобільні додатки"
               />
@@ -209,12 +212,31 @@
           <h2 class="section-title">Наша Команда</h2>
           <ul class="command-section__list">
             <li class="command-section__card">
-              <img
-                class="command-section__img"
-                src="./images/igor.jpg"
-                alt="Чоловік"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/command_1.jpg    1x,
+                    ./images/command_1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-command_1.jpg    1x,
+                    ./images/tablet-command_1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="command-section__img"
+                  srcset="
+                    ./images/mobile-command_1.jpg    1x,
+                    ./images/mobile-command_1@2x.jpg 2x
+                  "
+                  src="./images/mobile-command_1.jpg"
+                  alt="Чоловік"
+                />
+              </picture>
               <h3 class="command-section__title">Ігор Дем'яненко</h3>
               <p class="command-section__subtitle">Product Designer</p>
               <ul class="command-section__icons">
@@ -261,12 +283,31 @@
               </ul>
             </li>
             <li class="command-section__card">
-              <img
-                class="command-section__img"
-                src="./images/olha.jpg"
-                alt="Жінка"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/command_2.jpg    1x,
+                    ./images/command_2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-command_2.jpg    1x,
+                    ./images/tablet-command_2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="command-section__img"
+                  srcset="
+                    ./images/mobile-command_2.jpg    1x,
+                    ./images/mobile-command_2@2x.jpg 2x
+                  "
+                  src="./images/mobile-command_2.jpg"
+                  alt="Жінка"
+                />
+              </picture>
               <h3 class="command-section__title">Ольга Рєпіна</h3>
               <p class="command-section__subtitle">Frontend Developer</p>
               <ul class="command-section__icons">
@@ -313,12 +354,31 @@
               </ul>
             </li>
             <li class="command-section__card">
-              <img
-                class="command-section__img"
-                src="./images/mikola.jpg"
-                alt="Чоловік"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/command_3.jpg    1x,
+                    ./images/command_3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-command_3.jpg    1x,
+                    ./images/tablet-command_3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="command-section__img"
+                  srcset="
+                    ./images/mobile-command_3.jpg    1x,
+                    ./images/mobile-command_3@2x.jpg 2x
+                  "
+                  src="./images/mobile-command_3.jpg"
+                  alt="Чоловік"
+                />
+              </picture>
               <h3 class="command-section__title">Микола Тарасов</h3>
               <p class="command-section__subtitle">Marketing</p>
               <ul class="command-section__icons">
@@ -365,12 +425,31 @@
               </ul>
             </li>
             <li class="command-section__card">
-              <img
-                class="command-section__img"
-                src="./images/mihailo.jpg"
-                alt="Чоловік"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/command_4.jpg    1x,
+                    ./images/command_4@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-command_4.jpg    1x,
+                    ./images/tablet-command_4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="command-section__img"
+                  srcset="
+                    ./images/mobile-command_4.jpg    1x,
+                    ./images/mobile-command_4@2x.jpg 2x
+                  "
+                  src="./images/mobile-command_4.jpg"
+                  alt="Чоловік"
+                />
+              </picture>
               <h3 class="command-section__title">Михайло Єрмаков</h3>
               <p class="command-section__subtitle">UI Designer</p>
               <ul class="command-section__icons">
